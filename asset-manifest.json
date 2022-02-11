@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rt-dashboard/static/css/main.5aacc199.css",
+    "main.js": "/rt-dashboard/static/js/main.94ce6bc3.js",
+    "index.html": "/rt-dashboard/index.html",
+    "main.5aacc199.css.map": "/rt-dashboard/static/css/main.5aacc199.css.map",
+    "main.94ce6bc3.js.map": "/rt-dashboard/static/js/main.94ce6bc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5aacc199.css",
+    "static/js/main.94ce6bc3.js"
+  ]
+}
