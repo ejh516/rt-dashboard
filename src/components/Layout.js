@@ -65,14 +65,14 @@ export default function Layout({children}) {
     {
       text: 'Home',
       icon: <HomeIcon color="secondary" />,
-      path: '/'
+      path: '/rt-dashboard/'
     },
 
     ...getApps(data).map((app) => {
     return {
       text: app,
       icon: <ArrowRight color="secondary" />,
-      path: "apps/" + app,
+      path: "rt-dashboard/apps/" + app,
     }
   })
   ]
@@ -95,19 +95,19 @@ export default function Layout({children}) {
           button
         key="Home"
         onClick={() => navigate("/")}
-        className = {location.pathname == "/" ? classes.active : null}
+        className = {location.pathname == "rt-dashboard/" ? classes.active : null}
       >
         <ListItemIcon><HomeIcon color="secondary" /></ListItemIcon>
         <ListItemText primary="Home"/>
       </ListItem>
 
     <Typography variant="h6" >
-      Hosts
+      Apps
     </Typography>
 
     <List>
         {getApps(data).map(host => {
-          const path="/apps/" + host
+          const path="/rt-dashboard/apps/" + host
           return <ListItem 
             button
             key={host}

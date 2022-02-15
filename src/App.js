@@ -28,9 +28,9 @@ const App = () => {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            <Route path="/rt-dashboard/" element={<Homepage />} />
             {getApps(data).map((app) => {
-              return <Route key={app} path={"/apps/" + app} element={<ProxyApp appName={app} />} />
+              return <Route key={app} path={"/rt-dashboard/apps/" + app} element={<ProxyApp appName={app} />} />
             })}
 
           </Routes>
