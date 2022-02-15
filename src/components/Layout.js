@@ -94,7 +94,7 @@ export default function Layout({children}) {
         <ListItem 
           button
         key="Home"
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/rt-dashboard/")}
         className = {location.pathname == "rt-dashboard/" ? classes.active : null}
       >
         <ListItemIcon><HomeIcon color="secondary" /></ListItemIcon>
